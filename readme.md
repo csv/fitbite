@@ -1,4 +1,4 @@
-"""
+```
            .-""""-.
           /' .  '. \
          (`-..:...-')
@@ -12,7 +12,7 @@
          \/    \\
                 \\
                 '--`
-"""
+```
 Order one of your favorite meals from Seamless based on your Fitbit activity for the day.
 -----------------------------------------------------------------------------------------
 
