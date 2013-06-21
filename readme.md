@@ -17,7 +17,7 @@ fitbite
 -----------------------------------------------------------------------------------------
 _Order one of your favorite meals from Seamless based on your Fitbit activity for the day._
 ## Dependencies
-First, you'll need to set the following 6 Environmental Variables.  The easy way is to just add these to `
+First, you'll need to set the following 6 Environmental Variables.  The easy way is to just add these lines to `
 ~/.bash_profile` or `~/.zshrc`, depending on which shell you use.
 
 ```
