@@ -63,12 +63,12 @@ def order_seamless(calorie_level):
   possible_orders = [o for o in orders if re.search(".*"+calorie_level+".*", o.find_element_by_tag_name('a').get_attribute('title'))]
 
   n = len(possible_orders)
-  if n==0:
+  if n == 0:
     print "No suitable orders available at this time. It's probably too late to eat anyways!"
     return ""
-  elif n==1:
+  elif n == 1:
     the_order = possible_orders[0]
-  elif n>1:
+  elif n > 1:
     the_order = possible_orders[random.sample(range(0,(len(possible_orders)-1)))]
 
   # select the order
