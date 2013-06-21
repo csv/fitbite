@@ -23,14 +23,13 @@ def authorize_with_fitbit():
 def determine_calorie_level(fb, config):
 
   steps = fb.activity_stats()['lifetime']['tracker']['steps']
-  steps = 6000
   print "You've taken %d steps today" % steps
   # find possible levels
   levels = config['levels']
   the_calorie_level = levels[0].keys()[0]
   for l in levels:
-    calorie_level, step_level = l.keys()[0], l.vsalues()[0]
-    if step_level < steps:
+    calorie_level, step_level = l.keys()[0], l.values()[0]
+    if step_level =< steps:
       the_calorie_level = calorie_level
 
   return the_calorie_level
@@ -42,7 +41,7 @@ def order_seamless(calorie_level):
   SEAMLESS_PASSWORD = os.getenv("SEAMLESS_PASSWORD")
 
   # setup browser
-  browser = webdriver.Chrome()
+  browser = webdriver.Firefox()
 
   # open seamless and login
   browser.get(SEAMLESS_URL)

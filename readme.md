@@ -54,15 +54,15 @@ And have downloaded Firefox from [here]((http://www.mozilla.org/en-US/firefox/ne
 See an example list of my favorite meals:
 ![fav_meals](imgs/fav_meals.png)
 
-The names of each meal match the tagged calorie levels set in [`fitbite.yaml`](fitbite.yaml):
+The names of each meal match the tagged calorie levels set in [`fitbite.yaml`](fitbite.yaml). These can be as simple or specific as you'd like, just so long as they are ordered from Lowest Caloric Content to Highest Caloric Content:
 ```
 levels:
-  - LOW_CALORIES: 5000
-  - MEDIUM_CALORIES: 10000
-  - HIGH_CALORIES: 15000
+  - LOW_CALORIES: 5000 # Calorie Level, Step Level
+  - MEDIUM_CALORIES: 10000 # Calorie Level, Step Level
+  - HIGH_CALORIES: 15000 # Calorie Level, Step Level
 ```
 
 ## Runtime
-When your ready to run fitbite, just type `python fitbite.py`. That's it.
+When you step into your door at night and you're hungry, just type `python fitbite.py`. That's it. Your food will soon be on its way!
 
 
