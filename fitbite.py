@@ -29,7 +29,7 @@ def determine_calorie_level(fb, config):
   levels = config['levels']
   the_calorie_level = levels[0].keys()[0]
   for l in levels:
-    calorie_level, step_level = l.keys()[0], l.values()[0]
+    calorie_level, step_level = l.keys()[0], l.vsalues()[0]
     if step_level < steps:
       the_calorie_level = calorie_level
 
@@ -88,4 +88,5 @@ if __name__ == '__main__':
   config = load_config()
   fb = authorize_with_fitbit()
   calorie_level = determine_calorie_level(fb, config)
-  print order_seamless(re.sub("_", " ", calorie_level))
+
+  print order_seamless(calorie_level))
