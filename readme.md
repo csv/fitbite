@@ -1,4 +1,4 @@
-```
+"""
            .-""""-.
           /' .  '. \
          (`-..:...-')
@@ -12,7 +12,7 @@
          \/    \\
                 \\
                 '--`
-```
+"""
 Order one of your favorite meals from Seamless based on your Fitbit activity for the day.
 -----------------------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ You'll also need to make sure you have `selenium` for python installed:
 ```
 sudo pip install selenium
 ```
-And have downloaded Firefox from [here]((http://www.mozilla.org/en-US/firefox/new/))
+And have downloaded Firefox from [here]((http://www.mozilla.org/en-US/firefox/new/)
 
 ## Assumptions
 1.  Your CC info is saved on Seamless
