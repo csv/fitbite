@@ -13,9 +13,9 @@
                 \\
                 '--`
 ```
-Order one of your favorite meals from Seamless based on your Fitbit activity for the day.
+fitbite
 -----------------------------------------------------------------------------------------
-
+_Order one of your favorite meals from Seamless based on your Fitbit activity for the day._
 ## Dependencies
 First, you'll need to set the following 6 Environmental Variables.  The easy way is to just add these to `
 ~/.bash_profile` or `~/.zshrc`, depending on which shell you use.
@@ -54,7 +54,7 @@ And have downloaded Firefox from [here]((http://www.mozilla.org/en-US/firefox/ne
 See an example list of my favorite meals:
 ![fav_meals](imgs/fav_meals.png)
 
-The names of each meal match the tagged calorie levels set in [`fitbite.yaml`](fitbite.yaml). These can be as simple or specific as you'd like, just so long as they are ordered from Lowest Caloric Content to Highest Caloric Content:
+The names of each meal match the tagged calorie levels set in [`fitbite.yaml`](fitbite.yaml). These can be as simple or specific as you'd like, just so long as they are ordered from lowest caloric content to highest caloric content and match the tags you set on Seamless:
 ```
 levels:
   - LOW_CALORIES: 5000 # Calorie Level, Step Level
