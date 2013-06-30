@@ -29,7 +29,7 @@ def determine_calorie_level(fb, config):
   the_calorie_level = levels[0].keys()[0]
   for l in levels:
     calorie_level, step_level = l.keys()[0], l.values()[0]
-    if step_level =< steps:
+    if step_level <= steps:
       the_calorie_level = calorie_level
 
   return the_calorie_level
@@ -41,7 +41,7 @@ def order_seamless(calorie_level):
   SEAMLESS_PASSWORD = os.getenv("SEAMLESS_PASSWORD")
 
   # setup browser
-  browser = webdriver.Firefox()
+  browser = webdriver.Chrome()
 
   # open seamless and login
   browser.get(SEAMLESS_URL)
@@ -73,14 +73,14 @@ def order_seamless(calorie_level):
 
   # select the order
   the_order.click()
-  time.sleep(5)
+  time.sleep(10)
 
   # proceed to checkout
   browser.find_element_by_id('FormAction').click()
   time.sleep(5)
-  # browser.find_element_by_id('FormAction').click()
+  browser.find_element_by_id('FormAction').click()
 
-  return "Check %s to see what you ordered!" % SEAMLESS_PASSWORD
+  return "Check %s to see what you ordered!" % SEAMLESS_EMAIL
 
 if __name__ == '__main__':
 
@@ -88,4 +88,4 @@ if __name__ == '__main__':
   fb = authorize_with_fitbit()
   calorie_level = determine_calorie_level(fb, config)
 
-  print order_seamless(calorie_level))
+  print order_seamless(calorie_level)
