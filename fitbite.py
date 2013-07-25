@@ -49,7 +49,8 @@ def order_seamless(calorie_level):
   time.sleep(5)
   browser.find_element_by_id('username').send_keys(SEAMLESS_EMAIL)
   browser.find_element_by_id('password').send_keys(SEAMLESS_PASSWORD)
-  browser.find_element_by_id('corporate_member_submit').click()
+  time.sleep(2)
+  browser.find_element_by_id('submitLogin').click()
   time.sleep(5)
   # navigate to favorite meals
   browser.find_element_by_link_text('Favorite Meals').click()
@@ -78,7 +79,7 @@ def order_seamless(calorie_level):
   # proceed to checkout
   browser.find_element_by_id('FormAction').click()
   time.sleep(5)
-  browser.find_element_by_id('FormAction').click()
+  # browser.find_element_by_id('FormAction').click()
 
   return "Check %s to see what you ordered!" % SEAMLESS_EMAIL
 
